@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hulang>
+  <describe>Hulang is not a programming language; rather, it describes the tasks or operations that the code needs to perform.</describe>
+  <instructions>
+    <target>
+      <note>It must be defined at the top of the file and describe the target language and file name for compilation to.</note>
+      <must_do>if this line is specified , you have to reply to user with code in the target language and nothing else</must_do>
+      <syntax>
+        [Hulang to target language name -> filename.file_extention]
+        </syntax>
+      </target>
+
+    <extensions>
+      <note>it defines an instruction for Hulang and must be defined at top of the file after the target</note>
+      <syntax>
+        extension {
+        <name_of_instruction>
+          <note>describe how this instruction works</note>
+          <syntax>syntax for this instruction</syntax>
+          </name_of_instruction>
+        }
+        </syntax>
+      </extensions>
+
+
+    <dynamic_type>
+      <note>if a variable or parameter set to type dynamic . if target language supports do not specify the type to compiler does its work , if not set the type based on the code</note>
+      </dynamic_type>
+
+
+    <operations>
+      <note>Operations such as addition , subtraction and etc similar to those found in other programming languages. If a target programming language does not support these operations directly, you should achieve the same results using the available operations in that language.</note>
+      <Arithmetic_Operators>
+        + : Addition (e.g., a + b)
+        - : Subtraction (e.g., a - b)
+        * : Multiplication (e.g., a * b)
+        / : Division (e.g., a / b)
+        % : Modulus (remainder of division, e.g., a % b)
+        </Arithmetic_Operators>
+      <Relational_Operators>
+        == : Equality (e.g., a == b)
+        != : Inequality (e.g., a != b)
+        > : Greater than (e.g., a > b)
+        < : Less than (e.g., a < b)
+        >= : Greater than or equal to (e.g., a >= b)
+        <= : Less than or equal to (e.g., a <= b)
+        </Relational_Operators>
+      <Logical_Operators>
+        and : Logical AND (e.g., a and b)
+        or : Logical OR (e.g., a or b)
+        not : Logical NOT (e.g., not(a))
+        </Logical_Operators>
+      </operations>
+
+    <imports>
+      <note>It is equivalent to importing libraries or headers</note>
+      <syntax>
+        import name of the library 
+        </syntax>
+      <syntax>
+        import name from library
+        </syntax>
+      </imports>
+
+    <variable>   
+      <variable_definition>
+        <note>it is equivalent to variable defintion in other languages , type can be set to dynamic</note>
+        <syntax> define variable_name type</syntax>
+        </variable_definition>
+      <variable_types>
+        <note>It is equivalent to variable types in other programming languages. If the target language does not support this functionality, use alternative methods to achieve it. This includes both user-defined types and default types.</note>
+        <default_types>
+          <note>It is equivalent to numeric types (integer, floating-point), character types (strings, char), and Boolean types in other programming languages.</note>
+          </default_types>
+        <user_defined_types>
+          <note>It is equivalent to types defined by the user through OOP concepts and other methods.</note>
+          </user_defined_types>
+        </variable_types>
+      <access_to_methods>
+        <note>It is equivalent to accessing member functions and member variables of a type in other programming languages. If this is not supported by the target language, use alternative methods to achieve the same functionality.</note>
+        <syntax>
+          variable_name.method_or_member_variable_name
+          </syntax>
+        </access_to_methods>
+      </variable>
+
+
+
+    <if_else>
+      <note>if else chain in other programming languages</note>
+      <syntax>if (condition) {statement} else if (condition) {statement} else {statement}</syntax>
+      </if_else>
+
+
+    <switch>
+      <note>In languages like C/C++, which have switch statements, it is equivalent to that. In other languages, it is equivalent to a chain of if-else statements.</note>
+      <syntax>
+        switch(condition){
+        case x {
+        // statement
+        } case y {
+        // statement
+        } default {
+        // statement
+        }
+        }
+        </syntax>
+      </switch>
+
+
+    <comments>
+      <note>It's similar to comments in other languages, where the lines are ignored by the compiler. If the language does not support comments, it equates to nothing.</note>
+      <syntax>
+        // this line is comment
+        /*
+        these lines are comments
+        */
+        </syntax>
+      </comments>
+
+
+    <loops>
+      <while_loop>
+        <note>It is equivalent to a while loop in other programming languages. If the language does not support while loops, write a loop that continues executing the statement as long as a condition is true.</note>
+        <syntax>
+          while (condition) {statement}
+          </syntax>
+        </while_loop>
+      </loops>
+
+
+    <function>
+      <function_define>     
+        <note>It is equivalent to functions in other languages. If the target language does not support functions, write code that achieves the same functionality through other means. type can be set to dynamic</note>
+        <syntax>
+          function function_name(parameters : type) -> return type {
+          // statements
+          }
+          </syntax>
+        </function_define>
+      <function_call>
+        <note>It is equivalent to invoking a function in other languages. If the target language does not support function invocation, write code that achieves the same functionality through other means.</note>
+        <syntax> function_name(parameters) </syntax>
+        </function_call>
+      </function>
+
+    <oop>
+      <note>It is equivalent to OOP (Object-Oriented Programming) concepts in other programming languages. If the target language does not support OOP, write code that achieves the same functionality through alternative methods.</note>
+
+      <class>
+        <note>It is equivalent to a class in other OOP languages. A class is a blueprint for creating objects.</note>
+        <syntax>
+          class ClassName {
+          public:
+          // Public members
+          ClassName(parameters); // Constructor
+          ~ClassName(); // Destructor
+          return_type method_name(parameters);
+
+          protected:
+          // Protected members
+
+          private:
+          // Private members
+          type member_variable;
+          };
+          </syntax>
+        </class>
+
+      <object>
+        <note>It is equivalent to an instance of a class in other OOP languages.</note>
+        <syntax>
+          ClassName object_name(parameters);
+          </syntax>
+        </object>
+
+      <inheritance>
+        <note>It is equivalent to inheritance in other OOP languages, where a class can inherit members and methods from another class.</note>
+        <syntax>
+          class DerivedClassName : access_specifier BaseClassName {
+          // Additional members and methods
+          };
+          </syntax>
+        </inheritance>
+
+      <polymorphism>
+        <note>It is equivalent to polymorphism in other OOP languages, where a function or method can have multiple forms.</note>
+        <syntax>
+          // Function overloading
+          return_type function_name(parameters);
+          return_type function_name(different_parameters);
+
+          // Function overriding
+          class BaseClass {
+          public:
+          virtual return_type method_name(parameters);
+          };
+
+          class DerivedClass : public BaseClass {
+          public:
+          return_type method_name(parameters) override;
+          };
+          </syntax>
+        </polymorphism>
+
+      <encapsulation>
+        <note>It is equivalent to encapsulation in other OOP languages, where data and methods are bundled together.</note>
+        <syntax>
+          class ClassName {
+          private:
+          type member_variable;
+
+          public:
+          void set_member_variable(type value);
+          type get_member_variable();
+          };
+          </syntax>
+        </encapsulation>
+
+      <abstraction>
+        <note>It is equivalent to abstraction in other OOP languages, where complex implementation details are hidden from the user.</note>
+        <syntax>
+          class AbstractClass {
+          public:
+          virtual void pure_virtual_method() = 0; // Pure virtual function
+          };
+
+          class ConcreteClass : public AbstractClass {
+          public:
+          void pure_virtual_method() override;
+          };
+          </syntax>
+        </abstraction>
+      </oop>
+
+
+    <describer>
+      <note>user describes the task which these lines must do</note>
+      <syntax>
+        describer {
+        // task in human language and Hulang
+        }
+        </syntax>
+      </describer>
+
+
+    </instructions>
+  </Hulang>
