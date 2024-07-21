@@ -8,3 +8,6 @@
 
 ## Getting started
 - Currently, there is no fully optimized compiler for Hulang. However, developing one is part of the future plans. For now, you can use `Specification/Hulang.xml` as the system prompt for your AI model. Then, provide your Hulang code to the AI, and it will compile it into the programming language of your choice.
+
+## Conclusion
+- In conclusion, Hulang allows you to write code once and compile it into various programming languages to meet your specific needs.
